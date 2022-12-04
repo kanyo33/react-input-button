@@ -3,7 +3,7 @@
 This button was inspired by removing the default "Choose File" input file type with a custom option.
 
 ```
-Import { InputBtn } from 'react-input-button'
+import { InputBtn } from 'react-input-button'
 ```
 
 The props include
@@ -14,7 +14,7 @@ The props include
   onChange={(e) => {}} //Get the event
   style={{}} //Overwrite the existing styles
   text="Upload" // The text of the button
-  showText={true} //Add custom component e.g. icon
-  component={} if showText = false
+  showText={true} // Add custom component e.g. icon
+  component={} // if showText = false
 />
 ```
