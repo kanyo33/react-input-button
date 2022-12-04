@@ -1,3 +1,5 @@
+import * as React from "react";
+
 interface MyComponentProps {
   text?: string;
   showText?: boolean;
@@ -8,7 +10,7 @@ interface MyComponentProps {
   component?: any;
 }
 
-function InputBtn(props: MyComponentProps) {
+export const InputBtn = (props: MyComponentProps) => {
   const { text = "Upload", showText = true, dataTypes = "image/*", onChange = () => {}, style = {}, multiple = false, component = {} } = props;
   return (
     <label style={style} className="Upload__Input" htmlFor="media">
@@ -16,6 +18,4 @@ function InputBtn(props: MyComponentProps) {
       {showText ? <p className="Upload__Text">{text}</p> : component}
     </label>
   );
-}
-
-export default InputBtn;
+};
